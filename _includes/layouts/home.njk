@@ -2,5 +2,22 @@
 layout: layouts/base.njk
 section: home
 ---
-
-{{ layoutContent | safe }}
+<div class="home-wrapper">
+    <img src="{{ featuredImage }}"/>
+    <div class="about-container">
+        <div class="about-description">
+            {{ layoutContent | safe }}
+        </div>
+        <div class="social-media">
+            <a href="https://youtube.com/c/nuhippie" target="_blank">
+                <img src="/static/img/youtube-icon.png" />
+            </a>
+            <a href="https://instagram.com/nu.hippie" target="_blank">
+                <img src="/static/img/instagram-icon.png" />
+            </a>
+            <a href="mailto:a.nu.hippie@gmail.com">
+                <img src="/static/img/email-icon.png" />
+            </a>
+        </div>
+    </div>
+</div>

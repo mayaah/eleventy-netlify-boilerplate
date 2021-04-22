@@ -26,10 +26,10 @@ body {
 	align-items: center;
 }
 
-main {
+/* main {
 	max-width: 37.5em;
 	margin: 0 auto;
-}
+} */
 
 p,
 pre,
@@ -134,8 +134,8 @@ header nav li a[data-current="current item"] {
 /* Home */
 .home-wrapper {
 	display: grid;
-	grid-template-columns: 200px 1fr;
-	grid-gap: 16px;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-gap: 1rem;
 	justify-items: center;
 	align-items: center;
 }
